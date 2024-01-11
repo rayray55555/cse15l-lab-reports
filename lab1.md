@@ -30,10 +30,10 @@ for cd command with a path to a file as an argument.
 4, No error.  
 
 -for ls command with a path to a file as an argument.  
-1, ![image](3.png)  
+1, ![image](8.png)  
 2, README file.  
-3, No such file or directory, file can not be found.
-4, ERROR, if the file did not exist, we would receive an error message such as ls: cannot access 'README': No such file or directory, indicating that the file cannot be found in the current working directory.  
+3, The ls command can be used with file paths, but it doesn't list the contents of the file, just the file name if it exists.  
+4, NO error.  
 
 -for cat command with no arguments.  
 1, ![Image](4.png)  
@@ -48,7 +48,7 @@ for cd command with a path to a file as an argument.
 4, Error, cat is used to read and display the content of files. It is not designed to handle directories.  
 
 -for ls command with a path to a file as an argument.  
-1, ![Image](6.png)  
+1, ![Image](7.png)  
 2, README file.  
 3, the command reads and displays the content of the specified file. The cat command is designed for this purpose.  
 4, no Error.  
