@@ -1,3 +1,1 @@
-![Image][1]
-⋮
-[1]: http://url/b.jpg
+# Heading 1
