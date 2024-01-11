@@ -1,4 +1,4 @@
-# CSE15L_Lab_report_1_Ray Wu_A18583446
+# CSE15L_Lab_report_1_Ray Wu_A17583446
 -for cd command with no arguments.  
 1, ![Image](Screenshot 2024-01-11 at 13.09.10.png)  
 2, the directory is just /home This command will change the current directory to the home directory.  
