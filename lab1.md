@@ -15,4 +15,42 @@ for cd command with a path to a file as an argument.
 1, ![Image](Screenshot 2024-01-11 at 13.26.47.png)  
 2, No such file or directory.  
 3, cd command does not work with file paths, only directories.  
-4, It will result in an error because the command expects a directory path, not a file path.
+4, It will result in an error because the command expects a directory path, not a file path.  
+
+-for ls command with no arguments.  
+1, ![Image](1.png)  
+2, it will show lecture1.  
+3, When the ls command is executed without any arguments, it defaults to listing the contents of the current working directory.  
+4, No error.  
+
+-for ls with a path to a directory as an argument.  
+1, ![Image](2.png)  
+2, contents of the lecture1 directory, Hello.class Hello.java messages README.  
+3, The output we receive will be the names of all files and directories contained in Lecture1. The target of this command is Lecture1.  
+4, No error.  
+
+-for ls command with a path to a file as an argument.  
+1, ![image](3.png)  
+2, README file.  
+3, No such file or directory, file can not be found.
+4, ERROR, if the file did not exist, we would receive an error message such as ls: cannot access 'README': No such file or directory, indicating that the file cannot be found in the current working directory.  
+
+-for cat command with no arguments.  
+1, ![Image](4.png)  
+2, no directories. since cat is not a directory.  
+3, cat cannot be used on directories.  
+4, Error, cat is used to read and display the content of files. It is not designed to handle directories.  
+
+-for ls with a path to a directory as an argument.  
+1, ![Image](5.png)  
+2, no directories, cat is not a directory.  
+3, cat cannot be used on directories.  
+4, Error, cat is used to read and display the content of files. It is not designed to handle directories.  
+
+-for ls command with a path to a file as an argument.  
+1, ![Image](6.png)  
+2, README file.  
+3, the command reads and displays the content of the specified file. The cat command is designed for this purpose.  
+4, no Error.  
+
+
