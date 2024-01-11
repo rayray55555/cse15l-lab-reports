@@ -12,7 +12,7 @@
 4, This is no an error, When this command is executed successfully, there's no output; the command silently changes the current directory to the specified path.   
 
 for cd command with a path to a file as an argument.  
-1,  
+1, ![Image](Screenshot 2024-01-11 at 13.26.47.png)  
 2, No such file or directory.  
 3, cd command does not work with file paths, only directories.  
 4, It will result in an error because the command expects a directory path, not a file path.
