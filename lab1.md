@@ -1,5 +1,5 @@
 # Lab Report 1
-##for cd command with no arguments.  
+## for cd command with no arguments.  
 1, ![Image](Screenshot 2024-01-11 at 13.09.10.png)  
 2, the directory is just /home This command will change the current directory to the home directory.  
 3,  The command interprets the lack of arguments as an instruction to go to this default location.   
