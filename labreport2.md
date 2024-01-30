@@ -14,3 +14,10 @@
 
 ## Using the command line, show with ls and take screenshots of:  
 ### The absolute path to the private key for your SSH key for logging into ieng6
+![Image](lab2pravite.png)   
+
+### The absolute path to the public key for your SSH key for logging into ieng6
+![Image](lab2public.png)  
+
+### A terminal interaction where you log into your ieng6 account without being asked for a password.
+![Image](lab2pass.png)  
