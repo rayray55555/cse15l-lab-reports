@@ -14,7 +14,8 @@
 
 ## Using the command line, show with ls and take screenshots of:  
 ### The absolute path to the private key for your SSH key for logging into ieng6
-![Image](lab2pravite.png)   
+![Image](lab2pravite.png)  
+
 
 ### The absolute path to the public key for your SSH key for logging into ieng6
 ![Image](lab2public.png)  
