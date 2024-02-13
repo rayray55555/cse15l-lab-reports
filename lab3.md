@@ -86,4 +86,5 @@ smalled than 1000 bytes
 1. https://www.geeksforgeeks.org/find-command-in-linux-with-examples/
 2. Using ChatGPT
 ![Image](lab3pt29.png)
-![Image](lab3pt220.png) 
+![Image](lab3pt220.png)   
+With the output from ChatGPT, I used some of the options for find to provide examples of what wecan do with find .
