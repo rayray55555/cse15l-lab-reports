@@ -1,6 +1,6 @@
 # Lab Report 2
 ## Part 1
-### code for ChatServer  
+### code for ChatServer
 ![Image](lab2u1.png)   
 ![Image](lab2u2.png)  
 ### two screenshots of using /add-message   
