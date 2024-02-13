@@ -21,11 +21,11 @@ code block in Markdown)
 Associated Code:  
 ![Image](lab32.png) 
 
-3. -The symptom
+3. -The symptom  
 ![Image](lab34.png)
 
-4. The Bug.
-   Before Code:
+4. The Bug.  
+Before Code:  
    ![Image](lab32.png)
-After Code:
+After Code:  
   ![Image](lab36.png)
