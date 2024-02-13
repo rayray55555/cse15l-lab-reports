@@ -19,13 +19,13 @@ code block in Markdown)
 ![Image](lab33.png)
 
 Associated Code:  
-![Image](lab32.png) 
+![Image](lab32.png)   
 
 3. -The symptom  
-![Image](lab34.png)
+![Image](lab34.png)  
 
 4. The Bug.  
 Before Code:  
-   ![Image](lab32.png)
+   ![Image](lab32.png)  
 After Code:  
-  ![Image](lab36.png)
+  ![Image](lab36.png)  
