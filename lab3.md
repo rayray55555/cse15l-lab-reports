@@ -22,7 +22,7 @@ Associated Code:
 ![Image](lab32.png)   
 
 3. -The symptom  
-![Image](lab34.png)  
+![Image](lab2pt1.png)  
 
 4. The Bug.  
 Before Code:  
