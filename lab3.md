@@ -48,8 +48,8 @@ want to find in. In this case, we are finding all the txt files in ./technical/9
 shown all the txt files inside it. This is useful because we can find all the txt files that are contained
 in a folder and know what they are.
 
-3. -type in find Example 1 - find all the directories in the specified directory
-   ![Image](.png)
+3. -type in find Example 1 - find all the directories in the specified directory  
+   ![Image](.png)  
    In this case, we used --type d to find all the directories inside of ./technical . This is
 useful because we can use -type d to find all the directories inside the directory we want
 and know what they are.
@@ -59,30 +59,29 @@ and know what they are.
   In this case, we used -type f to find the files in ./technical/government/About_LSC/ . This is
 useful because we can use this method to find all the files that are inside a specific directory.
 
-5. -mtime in find Example 1 - using -mtime -7 to find the files in a directory that is modified
-within the last 7 days
+5. -mtime in find Example 1 - using -mtime -7 to find the files in a directory that is modified within the last 7 days  
   ![Image](.png)  
   We can see that by using -mtime -7 , it prints out all the files that are modified in the last 7
 days. This is useful because it can show use what files are modified in a specific range of time
-in a directory.
+in a directory.  
 
-6. Example 2 - using -mtime +30 to find the files in a directory that is modified more than 30 days
+6. Example 2 - using -mtime +30 to find the files in a directory that is modified more than 30 days  
 ![Image](.png)   
    We can see that by using mtime +30 , nothing prints out because all the files are added today, so
 no files more modified more than 30 days ago. This is useful because it can tell use what time
-range was the file modified.
+range was the file modified.  
 
 7. -size in find We can use size to finds files that have different sizes. For example -size
 1000c means a files that is exactly 1000 bytes. We can add -/+ to tell it to find files that are
 smaller or loger than the size you want. Tips: c is fore bytes, k is for kilobytes, M is for
 megabytes, and G is for gigabytes. Example 1 - using -size -1000c to find files that are
-smalled than 1000 bytes
+smalled than 1000 bytes  
 ![Image](.png)  
  In this case, we used -size -1000c to find the files that are smaller than 1000 bytes in the side
 of the ./technical/ directory. This is useful because we can use this command to find files
 that are smaller than a specific size range.  
 
-8. Example 2 - using -size +100k to find files that are larger than 100 kilobytes
+8. Example 2 - using -size +100k to find files that are larger than 100 kilobytes  
 ![Image](.png)  
   In this case, we used -size +100k to find the files that are larger than 100 kilobytes inside of
 ./technical/ directory. This is useful because it can let us know what files are bigger than a
@@ -91,34 +90,3 @@ certain range inside a directory we want to know.
 # Sources:
 1. https://www.geeksforgeeks.org/find-command-in-linux-with-examples/
 2. Using ChatGPT
-Prompt:  
-What does find do in the command line and what are some command-line options?  
-Output:  
-The find command is a powerful command-line utility in Unix-like operating systems
-Here is a brief overview of what find can do and some commonly used command-line options
-Basic Usage:  
-The basic usage of find is to specify a starting directory and optional search criteria
-By default, find will search for all files and directories under the specified starting
-Common Command-Line Options:  
--name:  
-Use the -name option to search for files with a specific name pattern.  
-For example, to find all files named "example.txt," you can use: find /path/to/search
--type:  
-The -type option allows you to filter the search results by the type of file or direct
-Options include -type f (regular files), -type d (directories), and others (e.g., -ty
--mtime:  
-The -mtime option is used to search for files based on their modification time.  
-You can specify the number of days using -mtime +n (more than n days ago), -mtime -n
--size:  
-The -size option allows you to search for files based on their size.  
-You can specify the size in bytes, with modifiers like c (bytes), k (kilobytes), M (m
--exec:  
-The -exec option lets you execute a command on the files found by find  
-For example, to delete all .log files, you can use: find /path/to/search -type f -nam
--print:  
-The -print option is the default action of find and simply prints the path of each ma
--maxdepth and -mindepth:  
-These options allow you to control the depth of the search. -maxdepth limits how deep
-These are just a few of the many options available with the find command. By combining
-With the output from ChatGPT, I used some of the options for find to provide examples of what we
-can do with find .  
