@@ -61,9 +61,8 @@ useful because we can use this method to find all the files that are inside a sp
 
 5. -mtime in find Example 1 - using -mtime -7 to find the files in a directory that is modified within the last 7 days  
   ![Image](lab3pt25.png)  
-  We can see that by using -mtime -7 , it prints out all the files that are modified in the last 7
-days. This is useful because it can show use what files are modified in a specific range of time
-in a directory.  
+  
+By employing the -mtime -7 command, it lists all files that have been modified within the past 7 days. This method is beneficial as it enables us to identify which files have been modified within a particular time frame in a directory.  
 
 6. Example 2 - using -mtime +30 to find the files in a directory that is modified more than 30 days  
 ![Image](lab3pt26.png)   
@@ -77,15 +76,11 @@ smaller or loger than the size you want. Tips: c is fore bytes, k is for kilobyt
 megabytes, and G is for gigabytes. Example 1 - using -size -1000c to find files that are
 smalled than 1000 bytes  
 ![Image](lab3pt27.png)  
- In this case, we used -size -1000c to find the files that are smaller than 1000 bytes in the side
-of the ./technical/ directory. This is useful because we can use this command to find files
-that are smaller than a specific size range.  
+ In this scenario, we employed the -size -1000c command to locate files within the ./technical/ directory that are less than 1000 bytes. This method is advantageous for identifying files that fall below a predetermined size limit.  
 
 8. Example 2 - using -size +100k to find files that are larger than 100 kilobytes  
 ![Image](lab3pt28.png)  
-  In this case, we used -size +100k to find the files that are larger than 100 kilobytes inside of
-./technical/ directory. This is useful because it can let us know what files are bigger than a
-certain range inside a directory we want to know.  
+ In this instance, we utilized the command -size +100k to identify files exceeding 100 kilobytes in size within the ./technical/ directory. This approach is beneficial as it allows us to determine which files surpass a specific size threshold within a directory of interest.  
 
 # Sources:
 1. https://www.geeksforgeeks.org/find-command-in-linux-with-examples/
