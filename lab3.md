@@ -86,4 +86,4 @@ smalled than 1000 bytes
 1. https://www.geeksforgeeks.org/find-command-in-linux-with-examples/
 2. Using ChatGPT
 ![Image](lab3pt29.png)
-![Image](lab3pt20.png) 
+![Image](lab3pt220.png) 
