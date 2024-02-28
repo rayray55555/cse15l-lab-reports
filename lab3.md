@@ -31,7 +31,7 @@ public void testReverseInPlace() {
     ArrayExamples.reverseInPlace(input1);
     assertArrayEquals(new int[]{ 0,1,0 }, input1);
 }  
-
+```
 Associated Code:  
 ```java
 static void reverseInPlace(int[] arr) {
@@ -39,7 +39,7 @@ static void reverseInPlace(int[] arr) {
         arr[i] = arr[arr.length - i - 1];
     }
 }
-
+```
 3. -The symptom  
 ![Image](lab2pt1.png)  
 
