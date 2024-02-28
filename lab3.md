@@ -71,7 +71,7 @@ The original code had a mistake because it was trying to flip the array's elemen
 # Part 2 - Researching Commands  
 Using command find find can be used to find files and directories and perform operations on
 them.  
-1. -type
+1. Example 1 find command is being used to search within the ./technical/ directory for a file specifically named chapter-1.txt.
 ```java
   $ find ./technical/ -name chapter-1.txt
 ./technical/911report/chapter-1.txt
