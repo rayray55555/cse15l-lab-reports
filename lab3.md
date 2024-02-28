@@ -8,22 +8,20 @@ Provide:
    
 1. A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown).
  
-JUnit Test:  
-```
+// JUnit Test
+@Test
 public void testReverseInPlace2() {
     int[] input1 = { 3,2,1,0 };
     ArrayExamples.reverseInPlace(input1);
     assertArrayEquals(new int[]{ 0,1,2,3 }, input1);
 }
 
-Associated Code:  
-```java
+// Associated Code
 static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length; i += 1) {
         arr[i] = arr[arr.length - i - 1];
     }
 }
-
 2. An input that doesnʼt induce a failure, as a JUnit test and any associated code (write it as a
 code block in Markdown)JUnit Test:
 ```java
