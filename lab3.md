@@ -104,7 +104,7 @@ want to find in. In this case, we are finding all the txt files in ./technical/9
 shown all the txt files inside it. This is useful because we can find all the txt files that are contained
 in a folder and know what they are.
 
-4. -type in find Example 1 - find all the directories in the specified directory
+3. -type in find Example 1 - find all the directories in the specified directory
 ```java
 $ find ./technical/ -type d
 ./technical/
@@ -123,7 +123,7 @@ $ find ./technical/ -type d
 useful because we can use -type d to find all the directories inside the directory we want
 and know what they are.
 
-5. Example 2 - find all the files in a specific directory  
+4. Example 2 - find all the files in a specific directory  
 ```java
 $ find ./technical/government/About_LSC/ -type f
 ./technical/government/About_LSC/Comments_on_semiannual.txt
@@ -148,7 +148,7 @@ $ find ./technical/government/About_LSC/ -type f
   In this case, we used -type f to find the files in ./technical/government/About_LSC/ . This is
 useful because we can use this method to find all the files that are inside a specific directory.
 
-6. -mtime in find Example 1 - using -mtime -7 to find the files in a directory that is modified within the last 7 days  
+5. -mtime in find Example 1 - using -mtime -7 to find the files in a directory that is modified within the last 7 days  
 ```java
 $ find ./technical/government/Alcohol_Problems/ -type f -mtime -7
 ./technical/government/Alcohol_Problems/DraftRecom-PDF.txt
@@ -159,7 +159,7 @@ $ find ./technical/government/Alcohol_Problems/ -type f -mtime -7
 
 By employing the -mtime -7 command, it lists all files that have been modified within the past 7 days. This method is beneficial as it enables us to identify which files have been modified within a particular time frame in a directory.  
 
-7. Example 2 - using -mtime +30 to find the files in a directory that is modified more than 30 days  
+6. Example 2 - using -mtime +30 to find the files in a directory that is modified more than 30 days  
 ```java
 $ find ./technical/government/Alcohol_Problems/ -type f -mtime +30
 ``` 
@@ -167,7 +167,7 @@ $ find ./technical/government/Alcohol_Problems/ -type f -mtime +30
 no files more modified more than 30 days ago. This is useful because it can tell use what time
 range was the file modified.  
 
-8. -size in find We can use size to finds files that have different sizes. For example -size
+7. -size in find We can use size to finds files that have different sizes. For example -size
 1000c means a files that is exactly 1000 bytes. We can add -/+ to tell it to find files that are
 smaller or loger than the size you want. Tips: c is fore bytes, k is for kilobytes, M is for
 megabytes, and G is for gigabytes. Example 1 - using -size -1000c to find files that are
@@ -179,7 +179,7 @@ $ find ./technical/ -type f -size -1000c
 ```
  In this scenario, we employed the -size -1000c command to locate files within the ./technical/ directory that are less than 1000 bytes. This method is advantageous for identifying files that fall below a predetermined size limit.  
 
-9. Example 2 - using -size +100k to find files that are larger than 100 kilobytes  
+8. Example 2 - using -size +100k to find files that are larger than 100 kilobytes  
 ```java
 $ find ./technical/ -type f -size +100k
 ./technical/911report/chapter-1.txt
