@@ -9,7 +9,7 @@ Provide:
 1. A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown).
  
 JUnit Test:  
-```java
+```
 public void testReverseInPlace2() {
     int[] input1 = { 3,2,1,0 };
     ArrayExamples.reverseInPlace(input1);
