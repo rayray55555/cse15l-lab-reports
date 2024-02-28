@@ -16,7 +16,7 @@ In this step, I used bash test.sh to run the test. It shows one failure out of t
 ![Image](lab44.png)  
 In this step, I used vim ListExamples.java to get into the file in the terminal using vim. The command was 34 lines down from the first line, so I did 34j to go down to the line that has index1 += 1; Press i to enter Insert mode where I can type and edit text. change index1 += 1; to index2 += 1;Press Esc to exit Insert mode. Type :wq to write the file and quit Vim. Therefore, after the keypresses, we went into the file and changed index1 to index2. and saved the file.  
 
-By running bash test.sh I can run the test, and it showed that both tests passed
+## Step 8 - Run the tests, demonstrating that they now succeed
 ![Image](lab45.png)  
 By running bash test.sh I can run the test, and it showed that both tests passed  
 
