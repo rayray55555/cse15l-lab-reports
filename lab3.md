@@ -9,18 +9,38 @@ Provide:
 1. A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown).
  
 JUnit Test:  
-![Image](lab31.png)
+```java
+public void testReverseInPlace2() {
+    int[] input1 = { 3,2,1,0 };
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{ 0,1,2,3 }, input1);
+}
 
 Associated Code:  
-![Image](lab32.png) 
+```java
+static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+        arr[i] = arr[arr.length - i - 1];
+    }
+}
 
 2. An input that doesnʼt induce a failure, as a JUnit test and any associated code (write it as a
-code block in Markdown)
-  JUnit Test:
-![Image](lab33.png)
+code block in Markdown)JUnit Test:
+```java
+@Test
+public void testReverseInPlace() {
+    int[] input1 = { 0,1,0 };
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{ 0,1,0 }, input1);
+}  
 
 Associated Code:  
-![Image](lab32.png)   
+```java
+static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+        arr[i] = arr[arr.length - i - 1];
+    }
+}
 
 3. -The symptom  
 ![Image](lab2pt1.png)  
@@ -29,7 +49,7 @@ Associated Code:
 Before Code:  
    ![Image](lab32.png)  
 After Code:  
-  ![Image](lab36.png)
+  ![Image](newlab31.png)
 
 Briefly describe why the fix addresses the issue.  
 The original code had a mistake because it was trying to flip the array's elements around directly in the array itself. While doing this, it ended up messing up the order because it was changing the numbers too early, so by the time it got to the end of the array, it was just copying the new numbers it had already put in, not the old ones it was supposed to. This is why the results were mixed up. The corrected code solves the problem by creating a copy of the original array, which is called temp. As it goes through the original array, it places the values from temp into the original array in reverse order. This method works because it keeps the original numbers safe in temp while it changes the original array. This way, the numbers that haven't been moved yet don't get changed by accident, which was the issue with the first version of the code. Now, the function can reverse the array correctly because it uses the unchanged values from temp to update the original array.  
@@ -37,8 +57,8 @@ The original code had a mistake because it was trying to flip the array's elemen
 # Part 2 - Researching Commands  
 Using command find find can be used to find files and directories and perform operations on
 them.  
-1. Example 1,- find chapter-1.txt.  
-  ![Image](lab3pt21.png)
+1. -type
+  ![Image](newlab32.png)
 
 In this scenario, the process involves searching for the file named "chapter-1.txt" within the "./technical" directory. The result of this search indicates the exact location of the file, which is "./technical/911report/chapter1.txt". This functionality is beneficial as it assists in pinpointing the precise location of the desired file within the directory structure.  
 
