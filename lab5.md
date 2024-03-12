@@ -39,3 +39,10 @@ cd grading-area
 javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java 2> feedback.txt
 java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore TestListExamples >output.txt
 ```
+Here is the directory before running the code:
+![Image](.png)   
+
+Here is the directory after running the code:
+![Image](.png)   
+
+Description: I use <bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-lab3> for the input in the terminal. After running the code, I see that it created a folder called <grading-area>, where it clones the student submission file <TestListExamples.java> and provides feedback with <feedback.txt> and <output.txt>, it also clones the two files from the <lib> folder. The problem that might cause the error is that there are two <ListExmaples.java>, and it can not find the main class to run it.
