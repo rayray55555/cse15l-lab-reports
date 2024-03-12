@@ -4,7 +4,7 @@
 Hi, I have a problem when I am working on the List-Examples-Grader, and I cannot find out how to
 resolve the issue. I have a few guesses of what might cause the failure.
 Here is the output of the error:  
-![Image](.png)   
+![Image](lab51.png)   
 Here is the code for the grade.sh file:  
 ```java
 CPATH='.:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar'
@@ -40,10 +40,10 @@ javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java 2> feedback.tx
 java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore TestListExamples >output.txt
 ```
 Here is the directory before running the code:
-![Image](.png)   
+![Image](lab52.png)   
 
 Here is the directory after running the code:
-![Image](.png)   
+![Image](lab53.png)   
 
 Description: I use ```bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-lab3``` for the input in the terminal. After running the code, I see that it created a folder called ```grading-area```, where it clones the student submission file ```TestListExamples.java``` and provides feedback with ```feedback.txt``` and ```output.txt```, it also clones the two files from the ```lib``` folder. The problem that might cause the error is that there are two ```ListExmaples.java```, and it can not find the main class to run it.  
 
@@ -111,7 +111,7 @@ This shows that it works because the file ```https://github.com/ucsd-cse15l-f22/
 
 ### All the information needed
 -The file & directory structure needed:  
-![Image](.png)  
+![Image](lab52.png)  
 -The contents of each file before fixing the bug  
 grade.sh:  
 ```
