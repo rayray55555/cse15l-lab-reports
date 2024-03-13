@@ -48,6 +48,9 @@ Here is the directory after running the code:
 Description: I use ```bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-lab3``` for the input in the terminal. After running the code, I see that it created a folder called ```grading-area```, where it clones the student submission file ```TestListExamples.java``` and provides feedback with ```feedback.txt``` and ```output.txt```, it also clones the two files from the ```lib``` folder. The problem that might cause the error is that there are two ```ListExmaples.java```, and it can not find the main class to run it.  
 
 ### TA’s Respond:  
+I suggest you read through the ```grade.sh``` and pay more attention to how you clone the ```lib``` files into the ```grading-area```. This is because, in this case, you copy the files in the lib folder, but when you compile and run the code, you are looking for the lib folder with the two files inside the ```grading-area``` folder.
+
+Please take your time to go over the lines of code that relate to moving the ```lib``` files and make sure the files are correctly cloned.  
 
 ### Student’s Respond:  
 Hi, after going through your suggestion, I found the problem and was able to fix it. I discovered that when I am copying the lib files, I only copy the files but not the folder. This will cause that problem when using ```javac``` and ```java``` because in those two lines, it finds the two files from the ```lib``` folder, but it does not exist in the ```grading-area folder```. Therefore, it will cause the problem of not being able to find the file. The fix was changing the line cp -r lib\ grading-area to ```cp -r lib grading-area```, by removing the ```\```, it will copy the entire folder, including the folder It will allow the later lines to find where two use the lib files.
